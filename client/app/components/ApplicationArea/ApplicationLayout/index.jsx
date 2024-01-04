@@ -5,7 +5,7 @@ import DesktopNavbar from "./DesktopNavbar";
 import MobileNavbar from "./MobileNavbar";
 
 import "./index.less";
-
+import ChatBox from "@/components/chat/ChatBox";
 export default function ApplicationLayout({ children }) {
   const mobileNavbarContainerRef = useRef();
 
@@ -17,6 +17,11 @@ export default function ApplicationLayout({ children }) {
         <div className="application-layout-side-menu">
           <DynamicComponent name="ApplicationDesktopNavbar">
             <DesktopNavbar />
+          </DynamicComponent>
+        </div>
+        <div>
+          <DynamicComponent name="ApplicationDesktopChat">
+            <ChatBox/>
           </DynamicComponent>
         </div>
         <div className="application-layout-content">
