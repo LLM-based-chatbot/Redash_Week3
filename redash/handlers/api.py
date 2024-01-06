@@ -105,6 +105,7 @@ class ApiExt(Api):
         return self.add_resource(resource, *urls, **kwargs)
 
 
+api = ApiExt()
 api.add_org_resource(ChatResource, "/api/chat", endpoint="chat")
 
 
