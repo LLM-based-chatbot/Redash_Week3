@@ -29,7 +29,7 @@ Follow the steps below to experience the integrated ChatGPT within Redash:
 2. Navigate to the cloned directory:
 
     ```bash
-    cd your-repo
+    cd Redash
     ```
 
 3. Start your Redash instance.
